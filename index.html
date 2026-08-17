@@ -1,254 +1,63 @@
 <!DOCTYPE html>
-<html lang="ko" class="scroll-smooth">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KongzziLAB | Warm Tech, Cool Code</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Lucide Icons (via CDN) -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-        }
-        .gradient-text {
-            background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
-        }
-        .card-hover:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-        /* 이미지 호버 줌 효과 */
-        .card-hover:hover .project-image {
-            transform: scale(1.05);
-        }
-        .reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.8s ease-out;
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        /* 기술 아이콘 일관된 크기 조절 */
-        .tech-icon {
-            width: 48px;
-            height: 48px;
-            object-fit: contain;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kongzzi ✿</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="text-slate-800 antialiased">
+<body>
 
-    <!-- Header / Navigation -->
-    <header class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold gradient-text">KongzziLAB</div>
-            <div class="hidden md:flex space-x-8 font-medium">
-                <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
-                <a href="#projects" class="hover:text-blue-600 transition-colors">Projects</a>
-                <a href="#skills" class="hover:text-blue-600 transition-colors">Skills</a>
-                <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
-            </div>
-        </nav>
+  <!-- Floating decorations -->
+  <div class="deco deco1" aria-hidden="true">🌸</div>
+  <div class="deco deco2" aria-hidden="true">⭐</div>
+  <div class="deco deco3" aria-hidden="true">🍀</div>
+  <div class="deco deco4" aria-hidden="true">🌙</div>
+  <div class="deco deco5" aria-hidden="true">✨</div>
+  <div class="deco deco6" aria-hidden="true">🌷</div>
+
+  <main class="hero">
+    <header class="hero__header">
+      <p class="hero__greeting">안녕하세요 ✿</p>
+      <h1 class="hero__title">kongzzi</h1>
+      <p class="hero__subtitle">welcome to my little space 🌿</p>
     </header>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-6">
-        <div class="container mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 reveal">
-                안녕하세요, <span class="gradient-text">KongzziLAB</span>입니다.
-            </h1>
-            <p class="text-xl md:text-2xl text-slate-600 mb-8 reveal">
-                콩찌랩은 차가운 코드를 <span class="font-semibold text-slate-800">따뜻한 가치</span>로 바꿉니다.<br>
-전공자의 깊이 있는 시선과 교육자의 마음으로 AI 시대의 새로운 문법을 제안합니다. 
-            </p>
-            <div class="flex justify-center space-x-4 reveal">
-                <a href="#projects" class="gradient-bg text-white px-8 py-3 rounded-full font-bold hover:opacity-90 transition-all">프로젝트 보기</a>
-                <a href="#contact" class="border-2 border-slate-200 px-8 py-3 rounded-full font-bold hover:bg-slate-50 transition-all">연락하기</a>
-            </div>
-        </div>
+    <section class="cards" aria-label="카테고리">
+
+      <!-- WORK -->
+      <article class="card card--work">
+        <div class="card__icon" aria-hidden="true">💼</div>
+        <h2 class="card__label">WORK</h2>
+        <p class="card__desc">내가 하는 일</p>
+        <span class="card__badge">coming soon ✦</span>
+      </article>
+
+      <!-- LIKE -->
+      <article class="card card--like">
+        <div class="card__icon" aria-hidden="true">🩷</div>
+        <h2 class="card__label">LIKE</h2>
+        <p class="card__desc">좋아하는 것, 취미</p>
+        <span class="card__badge">coming soon ✦</span>
+      </article>
+
+      <!-- LINK -->
+      <article class="card card--link">
+        <div class="card__icon" aria-hidden="true">🔗</div>
+        <h2 class="card__label">LINK</h2>
+        <p class="card__desc">나와 연결된 사이트들</p>
+        <span class="card__badge">coming soon ✦</span>
+      </article>
+
     </section>
+  </main>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white px-6">
-        <div class="container mx-auto max-w-3xl text-center reveal">
-            <h2 class="text-3xl font-bold mb-8">About Me</h2>
-            <p class="text-lg text-slate-600 leading-relaxed mb-4">
-                끊임없이 변화하는 기술 환경 속에서 효율적이고 확장 가능한 솔루션을 설계하는 것을 즐깁니다. 
-                복잡한 문제를 단순화하여 사용자에게 최고의 가치를 전달하는 것이 저의 핵심 목표입니다.
-            </p>
-            <p class="text-lg text-slate-600 leading-relaxed">
-                프론트엔드의 세밀한 인터랙션부터 백엔드의 견고한 로직까지, 프로젝트의 전체 라이프사이클을 아우르는 개발을 지향합니다.
-            </p>
-        </div>
-    </section>
+  <footer class="footer">
+    <p>made with 💕 by kongzzi</p>
+  </footer>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 px-6 bg-slate-50">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center reveal">Featured Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Project 1: E-Commerce Platform -->
-                <div class="bg-white rounded-2xl overflow-hidden transition-all duration-300 card-hover reveal border border-slate-100">
-                    <div class="relative overflow-hidden aspect-video bg-blue-100">
-                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=800" 
-                             alt="E-Commerce Interface" 
-                             class="project-image w-full h-full object-cover transition-transform duration-500"
-                             onerror="this.src='https://via.placeholder.com/800x450/3b82f6/ffffff?text=E-Commerce+Platform'">
-                    </div>
-                    <div class="p-6">
-                        <div class="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center text-white mb-4">
-                            <i data-lucide="shopping-cart" class="w-5 h-5"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
-                        <p class="text-slate-600 mb-4 text-sm">실시간 재고 관리와 결제 시스템이 통합된 현대적인 커머스 플랫폼입니다.</p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-blue-50 text-blue-600 px-2 py-1 rounded text-xs font-semibold">React</span>
-                            <span class="bg-purple-50 text-purple-600 px-2 py-1 rounded text-xs font-semibold">Node.js</span>
-                        </div>
-                        <a href="#" class="inline-flex items-center text-slate-800 font-bold hover:text-blue-600 transition-colors text-sm">
-                            GitHub View <i data-lucide="external-link" class="ml-1 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 2: Real-time Chat App -->
-                <div class="bg-white rounded-2xl overflow-hidden transition-all duration-300 card-hover reveal border border-slate-100">
-                    <div class="relative overflow-hidden aspect-video bg-purple-100">
-                        <img src="https://images.unsplash.com/photo-1611606063065-ee7946f0787a?auto=format&fit=crop&q=80&w=800" 
-                             alt="Messaging App UI" 
-                             class="project-image w-full h-full object-cover transition-transform duration-500"
-                             onerror="this.src='https://via.placeholder.com/800x450/a855f7/ffffff?text=Real-time+Chat+App'">
-                    </div>
-                    <div class="p-6">
-                        <div class="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center text-white mb-4">
-                            <i data-lucide="message-square" class="w-5 h-5"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Real-time Chat App</h3>
-                        <p class="text-slate-600 mb-4 text-sm">WebSocket을 이용한 지연 없는 실시간 채팅 및 파일 공유 애플리케이션입니다.</p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-blue-50 text-blue-600 px-2 py-1 rounded text-xs font-semibold">Socket.io</span>
-                            <span class="bg-purple-50 text-purple-600 px-2 py-1 rounded text-xs font-semibold">React</span>
-                        </div>
-                        <a href="#" class="inline-flex items-center text-slate-800 font-bold hover:text-blue-600 transition-colors text-sm">
-                            GitHub View <i data-lucide="external-link" class="ml-1 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 3: AI Data Dashboard -->
-                <div class="bg-white rounded-2xl overflow-hidden transition-all duration-300 card-hover reveal border border-slate-100">
-                    <div class="relative overflow-hidden aspect-video bg-indigo-100">
-                        <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=800" 
-                             alt="AI Dashboard Mockup" 
-                             class="project-image w-full h-full object-cover transition-transform duration-500"
-                             onerror="this.src='https://via.placeholder.com/800x450/4f46e5/ffffff?text=AI+Data+Dashboard'">
-                    </div>
-                    <div class="p-6">
-                        <div class="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center text-white mb-4">
-                            <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">AI Data Dashboard</h3>
-                        <p class="text-slate-600 mb-4 text-sm">Python 머신러닝 모델의 예측 결과를 시각화하여 제공하는 관리자 대시보드입니다.</p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-blue-50 text-blue-600 px-2 py-1 rounded text-xs font-semibold">Python</span>
-                            <span class="bg-purple-50 text-purple-600 px-2 py-1 rounded text-xs font-semibold">AWS</span>
-                        </div>
-                        <a href="#" class="inline-flex items-center text-slate-800 font-bold hover:text-blue-600 transition-colors text-sm">
-                            GitHub View <i data-lucide="external-link" class="ml-1 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-white px-6">
-        <div class="container mx-auto text-center reveal">
-            <h2 class="text-3xl font-bold mb-12">Tech Stack</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-                <!-- React -->
-                <div class="p-8 rounded-2xl bg-slate-50 flex flex-col items-center group transition-all border border-transparent hover:border-blue-100">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="tech-icon mb-4 group-hover:scale-110 transition-transform" alt="React">
-                    <h3 class="font-bold text-lg mb-2">React</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">사용자 인터페이스 구축을 위한 자바스크립트 라이브러리로, 효율적인 프론트엔드 개발을 가능하게 합니다.</p>
-                </div>
-                <!-- Node.js -->
-                <div class="p-8 rounded-2xl bg-slate-50 flex flex-col items-center group transition-all border border-transparent hover:border-green-100">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="tech-icon mb-4 group-hover:scale-110 transition-transform" alt="Node.js">
-                    <h3 class="font-bold text-lg mb-2">Node.js</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">자바스크립트 런타임으로, 고성능의 확장성 있는 백엔드 서버와 네트워크 애플리케이션 구축에 사용됩니다.</p>
-                </div>
-                <!-- Python -->
-                <div class="p-8 rounded-2xl bg-slate-50 flex flex-col items-center group transition-all border border-transparent hover:border-yellow-100">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="tech-icon mb-4 group-hover:scale-110 transition-transform" alt="Python">
-                    <h3 class="font-bold text-lg mb-2">Python</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">데이터 분석, AI, 자동화 등 다양한 분야에서 활용되는 강력하고 간결한 프로그래밍 언어입니다.</p>
-                </div>
-                <!-- AWS -->
-                <div class="p-8 rounded-2xl bg-slate-50 flex flex-col items-center group transition-all border border-transparent hover:border-orange-100">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="tech-icon mb-4 group-hover:scale-110 transition-transform" alt="AWS">
-                    <h3 class="font-bold text-lg mb-2">AWS</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">클라우드 기반 인프라를 구축하고 관리하며, 안정적인 서비스 배포와 확장성을 보장합니다.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <footer id="contact" class="py-20 gradient-bg text-white px-6">
-        <div class="container mx-auto text-center reveal">
-            <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
-            <p class="mb-12 text-blue-100 max-w-xl mx-auto">새로운 프로젝트나 협업 제안은 언제나 환영입니다. 아래 채널을 통해 연락주세요!</p>
-            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-12">
-                <a href="mailto:contact@kongzzilab.com" class="flex items-center hover:text-blue-200 transition-colors">
-                    <i data-lucide="mail" class="mr-2"></i> contact@kongzzilab.com
-                </a>
-                <a href="#" class="flex items-center hover:text-blue-200 transition-colors">
-                    <i data-lucide="github" class="mr-2"></i> GitHub
-                </a>
-                <a href="#" class="flex items-center hover:text-blue-200 transition-colors">
-                    <i data-lucide="linkedin" class="mr-2"></i> LinkedIn
-                </a>
-            </div>
-            <p class="text-sm text-blue-200 opacity-75">© 2026 KongzziLAB. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
-
-        // Scroll Reveal Animation
-        const revealElements = document.querySelectorAll('.reveal');
-        
-        const revealOnScroll = () => {
-            const triggerBottom = window.innerHeight * 0.85;
-            revealElements.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < triggerBottom) {
-                    el.classList.add('active');
-                }
-            });
-        };
-
-        window.addEventListener('scroll', revealOnScroll);
-        // Initial check
-        window.onload = revealOnScroll;
-    </script>
 </body>
 </html>
